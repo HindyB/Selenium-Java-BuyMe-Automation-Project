@@ -23,14 +23,12 @@ public class LoginPage extends BasePage{
         clickElement(Constants.submitButton);
 
         // Choose option of - Login with password
-        webDriverWait(Constants.loginPageLoginWithPasswordButton);
         clickElement(Constants.loginPageLoginWithPasswordButton);
     }
 
     // Perform registration
     private void enterValues() throws Exception {
         // Enter email
-        webDriverWait(Constants.loginPageEnterEmailField);
         sendKeysToElement(Constants.loginPageEnterEmailField, Constants.EMAIL);
         String findEmail = WebDriverSingleton.getDriverInstance().findElement(Constants.loginPageEnterEmailField).getAttribute("value");
         Assert.assertEquals(findEmail, Constants.EMAIL);

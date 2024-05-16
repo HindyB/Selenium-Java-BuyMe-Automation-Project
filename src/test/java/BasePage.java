@@ -14,10 +14,11 @@ public class BasePage {
 
     // Create click element
     public void clickElement(By locator) throws Exception {
+        webDriverWait(locator);
         getWebElement(locator).click();
     }
 
-    // Create click element
+    // Create click element from list
     public void clickElementFromList(WebElement locator) {
         locator.click();
     }

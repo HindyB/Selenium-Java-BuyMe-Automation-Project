@@ -10,7 +10,6 @@ public class SenderInfoPage extends BasePage {
 
     private void chooseWayForSendingGift() throws Exception {
         // Choose way of sending gift - Email
-        webDriverWait(Constants.senderPageChooseEmail);
         clickElement(Constants.senderPageChooseEmail);
 
         // Enter email of receiver
@@ -19,7 +18,6 @@ public class SenderInfoPage extends BasePage {
 
     // Enter sender name
     private void enterSenderName() throws Exception {
-        webDriverWait(Constants.senderPageEnterSenderNameField);
         clickElement(Constants.senderPageEnterSenderNameField);
         sendKeysToElement(Constants.senderPageEnterSenderNameField, Constants.SENDERNAME);
 

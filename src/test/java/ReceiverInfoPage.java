@@ -12,7 +12,6 @@ public class ReceiverInfoPage extends BasePage {
 
     private void enterReceiverName() throws Exception {
         // Enter receiver name
-        webDriverWait(Constants.receiverPageReceiverNameField);
         sendKeysToElement(Constants.receiverPageReceiverNameField, Constants.RECEIVERNAME);
         String findReceiver = WebDriverSingleton.getDriverInstance().findElement(Constants.receiverPageReceiverNameField).getAttribute("value");
         Assert.assertEquals(findReceiver, Constants.RECEIVERNAME);
@@ -20,11 +19,9 @@ public class ReceiverInfoPage extends BasePage {
 
     private void chooseEvent() throws Exception {
         // Open dropdown
-        webDriverWait(Constants.openDropdown);
         clickElement(Constants.openDropdown);
 
         // Choose event out of dropdown - birthday
-        webDriverWait(Constants.receiverPageEventDropdownBirthday);
         clickElement(Constants.receiverPageEventDropdownBirthday);
     }
 
@@ -42,7 +39,6 @@ public class ReceiverInfoPage extends BasePage {
         clickElement(Constants.receiverPageVideoButtonOpenPane);
 
         // Choose video
-        webDriverWait(Constants.receiverPageChooseVideo);
         clickElement(Constants.receiverPageChooseVideo);
     }
 
