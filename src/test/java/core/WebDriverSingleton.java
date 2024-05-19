@@ -1,6 +1,9 @@
+package core;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import utils.Constants;
 
 // Set up web driver in Singleton
 public class WebDriverSingleton {

@@ -1,7 +1,9 @@
+package utils;
+
 import org.openqa.selenium.By;
 
 public class Constants {
-    // Set up Constants
+    // Set up utils.Constants
     public static final String SENDERNAME = "Hindy";
     public static final String RECEIVERNAME = "Israel";
     public static final String EMAIL = "hindyqa@gmail.com";
@@ -19,22 +21,22 @@ public class Constants {
 
     // Set up general elements for few pages
     public static final By openDropdown = By.className("selected-name");
-    public static final By submitButton = By.cssSelector("button[type=submit]"); // clickElement(Constants.submitButton);
+    public static final By submitButton = By.cssSelector("button[type=submit]"); // clickElement(utils.Constants.submitButton);
 
 
-    // HomeScreen
+    // pages.HomeScreen
     public static final By homeScreenPriceRange200_299 = By.id("ember1128");
     public static final By homeScreenRegionJerusalem = By.id("ember1167");
     public static final By homeScreenCategoryFashionBrands = By.id("ember1229");
     public static final By homeScreenSubmitGiftButton = By.id("ember1253");
 
 
-    // PickBusiness
+    // pages.PickBusiness
     public static final By pickBusinessBuyMeFashionVoucher = By.id("ember2057");
     public static final By pickBusinessEnterChosenAmount = By.cssSelector("input[type=tel]");
 
 
-    // ReceiverInfoPage
+    // pages.ReceiverInfoPage
     public static final By receiverPageReceiverNameField = By.id("ember2426");
     public static final By receiverPageEventDropdownBirthday = By.cssSelector("li[value='10']");
     public static final By receiverPageTextarea = By.xpath("//*[@id=\"ember2437\"]/textarea");
@@ -42,13 +44,13 @@ public class Constants {
     public static final By receiverPageChooseVideo = By.id("ember2597");
 
 
-    // SenderInfoPage
+    // pages.SenderInfoPage
     public static final By senderPageChooseEmail = By.cssSelector("svg[gtm=method-email]");
     public static final By senderPageEnterEmailField = By.id("email");
     public static final By senderPageEnterSenderNameField = By.id("ember2657");
 
 
-    // LoginPage
+    // pages.LoginPage
     public static final By loginPageList = By.className("social-btn");
     public static final By loginPageEnterEmailOnlyField = By.id("ember2116");
     public static final By loginPageLoginWithPasswordButton = By.xpath("//*[@id=\"ember1016\"]/div/div[1]/div[2]/div/div[2]/div[3]/div[4]/span");

@@ -1,4 +1,9 @@
+package pages;
+
+import core.WebDriverSingleton;
 import org.testng.Assert;
+import core.BasePage;
+import utils.Constants;
 
 public class SenderInfoPage extends BasePage {
 

@@ -1,3 +1,5 @@
+package tests;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -11,6 +13,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import core.*;
+import pages.*;
+import utils.Constants;
 
 import java.io.File;
 import java.io.IOException;

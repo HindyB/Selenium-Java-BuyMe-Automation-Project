@@ -1,9 +1,13 @@
-//package pages;
+package pages;
 
+import core.WebDriverSingleton;
 import org.openqa.selenium.WebElement;
+import core.BasePage;
+import utils.Constants;
+
 import java.util.List;
 
-public class HomeScreen extends BasePage{
+public class HomeScreen extends BasePage {
     List<WebElement> elementList = WebDriverSingleton.getDriverInstance().findElements(Constants.openDropdown);
 
     public HomeScreen() throws Exception {

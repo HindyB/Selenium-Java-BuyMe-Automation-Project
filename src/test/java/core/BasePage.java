@@ -1,8 +1,11 @@
+package core;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.Document;
+import tests.SanityTestSpec;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -50,7 +53,7 @@ public class BasePage {
 
 
     // Read data from XML
-    static String getData(String keyName) throws Exception{
+    public static String getData(String keyName) throws Exception{
         ClassLoader classLoader = SanityTestSpec.class.getClassLoader();
         String xmlFilePath = String.valueOf(new File(classLoader.getResource("data.xml").getFile()));
         File fXmlFile = new File(xmlFilePath);

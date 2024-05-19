@@ -1,8 +1,14 @@
+package pages;
+
+import core.WebDriverSingleton;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import core.BasePage;
+import utils.Constants;
+
 import java.util.List;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
 
     public void login() throws Exception {
         registrationProcess();
